@@ -1,0 +1,40 @@
+.select {
+  .select__control {
+    border: 1px solid #2f4765;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 72px;
+    background: transparent;
+  }
+  .select__value-container {
+    padding: 0 26px;
+    font-size: 16px;
+  }
+
+  .select__single-value {
+    color: $white;
+    display: flex;
+    align-items: center;
+  }
+
+  .select__indicator-separator {
+    display: none;
+  }
+
+  .select__dropdown-indicator {
+    color: $gray;
+    padding-right: 26px;
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  .select__menu {
+    color: $black;
+  }
+
+  .select__icon {
+    margin-right: 18px;
+  }
+}

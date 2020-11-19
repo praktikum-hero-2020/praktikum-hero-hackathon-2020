@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../static/fonts/Roboto/Roboto.woff2') format('woff2'),
+    url('../../static/fonts/Roboto/Roboto.woff') format('woff'),
+    url('../../static/fonts/Roboto/Roboto.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../static/fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
+    url('../../static/fonts/Roboto/Roboto-Bold.woff') format('woff'),
+    url('../../static/fonts/Roboto/Roboto-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}

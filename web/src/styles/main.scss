@@ -1,0 +1,40 @@
+@import './_colors.scss';
+@import './fonts/index';
+
+body {
+  margin: 0;
+  background-color: $black;
+  position: relative;
+  color: $white;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: hidden;
+}
+
+.page {
+  padding: 64px 24px 0 24px;
+  box-sizing: border-box;
+  max-width: 375px;
+  max-height: 812px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.title {
+  font-family: 'Avenir', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: $white;
+}
+
+.subtitle {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+  color: $gray;
+  white-space: pre-wrap;
+}
+
