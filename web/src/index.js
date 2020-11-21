@@ -8,6 +8,7 @@ import './styles/main.scss';
 import { Provider } from './components/Provider/Provider';
 import Header from './components/Header/Header';
 import RoadMap from './components/RoadMap/RoadMap';
+import Footer from './components/Footer/Footer';
 /* Components */
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/project" component={RoadMap} />
             <Redirect from="/" to="/main" />
           </Switch>
+          <Footer />
         </Router>
       </div>
     </Provider>

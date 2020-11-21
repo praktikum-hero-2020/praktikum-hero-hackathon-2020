@@ -3,6 +3,7 @@
   align-items: center;
   width: 100%;
   margin-bottom: 60px;
+  cursor: pointer;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -10,6 +11,14 @@
     .check__circle {
       &:after {
         background-color: #ccc;
+      }
+    }
+  }
+
+  &:hover {
+    .check__circle {
+      &:after {
+        transform: scale(1.1);
       }
     }
   }
@@ -52,6 +61,7 @@
   box-sizing: border-box;
 
   &:after {
+    transition: transform .4s;
     position: absolute;
     content: '';
     width: 25px;
@@ -60,5 +70,6 @@
     border-radius: 50%;
     top: 6.5px;
     left: 6.5px;
+    box-shadow: 2px -1px 10px 0px black;
   }
 }
