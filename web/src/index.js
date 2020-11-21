@@ -17,11 +17,15 @@ const App = () => {
       <div className="app">
         <Router>
           <Header />
-          <Switch>
-            <Route path="/project" component={RoadMap} />
-            <Redirect from="/" to="/main" />
-          </Switch>
-          <Footer />
+          <main className="main">
+            <div className="main__wrapper">
+              <Switch>
+                <Route path="/project" component={RoadMap} />
+                <Redirect from="/" to="/main" />
+              </Switch>
+            </div>
+            <Footer />
+          </main>
         </Router>
       </div>
     </Provider>

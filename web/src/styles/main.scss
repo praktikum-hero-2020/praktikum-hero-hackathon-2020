@@ -8,6 +8,18 @@ body {
   overflow-y: hidden;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 70px);
+  min-height: calc(100vh - 70px);
+  overflow: auto;
+
+  &__wrapper {
+    flex-grow: 1;
+  }
+}
+
 .page {
   padding: 64px 24px 0 24px;
   box-sizing: border-box;
@@ -15,7 +27,6 @@ body {
   max-height: 812px;
   margin: 0 auto;
 }
-
 
 .subtitle {
   font-size: 16px;
