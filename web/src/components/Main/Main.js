@@ -6,6 +6,7 @@ import Popular from '../DataScreen/Popular/Popular';
 import Years from '../DataScreen/Years/Years';
 import Birthd from '../DataScreen/Birthd/Birthd';
 import Title from '../Title/Title';
+import Loader from '../Loader/Loader';
 
 const Main = () => {
   return (
