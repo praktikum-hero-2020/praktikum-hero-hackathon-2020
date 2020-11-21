@@ -5,20 +5,16 @@ import './Popular.scss';
 import Description from '../Description/Description';
 
 export default () => {
-  const tableHeading = [
-    'В избранном больше 9 раз',
-    'Не добавлен в избранное',
-    'В избранном меньше 9 раз'
-  ];
+  const tableHeading = ['В избранном больше 9 раз', 'Не добавлен в избранное', 'В избранном меньше 9 раз'];
   const tableData = [
     ['21312312', '5672673', '1346578'],
     ['325345', '345324534', '5345345'],
     ['9005', '6456', '123123'],
-    ['123123', '4365', '1341']
+    ['123123', '4365', '1341'],
   ];
   return (
     <div className="popular">
-      <Title className="popular__title" text='Заполнение главной популярности' />
+      <Title className="popular__title" text="Заполнение главной популярности" />
       <div className="popular__content">
         <Table heading={tableHeading} data={tableData} />
       </div>
