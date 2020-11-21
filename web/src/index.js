@@ -12,6 +12,7 @@ import Footer from './components/Footer/Footer';
 import TeamInfo from './components/TeamInfo/TeamInfo';
 import Main from './components/Main/Main';
 import Project from './components/Project/Project';
+import PetCard from './components/PetCard/PetCard';
 
 const App = () => {
   return (
