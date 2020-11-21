@@ -1,10 +1,11 @@
-@import './_colors.scss';
+@import './_vars.scss';
 @import './fonts/index';
 
 body {
   margin: 0;
   position: relative;
   font-family: 'Roboto', sans-serif;
+  overflow-y: hidden;
 }
 
 .page {
@@ -17,10 +18,9 @@ body {
 }
 
 .title {
-  font-family: 'Avenir', sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 54px;
+  font-size: 24px;
   line-height: 32px;
   text-align: center;
 }
@@ -33,4 +33,3 @@ body {
   color: $gray;
   white-space: pre-wrap;
 }
-

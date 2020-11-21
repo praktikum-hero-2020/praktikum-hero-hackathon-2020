@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
@@ -56,7 +55,7 @@ const getStyleLoaders = (scss = false) => {
     {
       loader: 'sass-resources-loader',
       options: {
-        resources: ['src/styles/_colors.scss'],
+        resources: ['src/styles/_vars.scss'],
       },
     },
   ];
@@ -99,7 +98,7 @@ module.exports = {
       errors: true,
     },
     progress: true,
-    /*proxy: {
+    /* proxy: {
       // прокси для обхода CORS
       '/api': {
         // С какого адреса webpack dev server'a будут проксироваться запросы на адрес локального сервера.
@@ -107,7 +106,7 @@ module.exports = {
         target: ``, // Целевой адрес локального сервера, куда будут проксироваться запросы с дев сервера
         changeOrigin: true,
       },
-    },*/
+    }, */
   },
   optimization: optimization(),
   resolve: {
@@ -182,16 +181,16 @@ module.exports = {
     new ProgressBarPlugin(),
     ...(isProd
       ? [
-        new MiniCssExtractPlugin({
-          filename: 'static/css/[name]-[contenthash].css',
-        }),
-       /* new webpack.DefinePlugin({
+          new MiniCssExtractPlugin({
+            filename: 'static/css/[name]-[contenthash].css',
+          }),
+          /* new webpack.DefinePlugin({
        // for global variables
           /!* disable React DevTools in production *!/
           /!*__REACT_DEVTOOLS_GLOBAL_HOOK__: '({ isDisabled: true })',*!/
           /!*'process.env.BASE_PATH': JSON.stringify(basePath),*!/
-        }),*/
-      ]
+        }), */
+        ]
       : []),
     /* Bundle analyzer */
     ...(isAnalyze ? [new BundleAnalyzerPlugin()] : []),
