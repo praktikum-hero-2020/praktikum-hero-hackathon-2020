@@ -4,6 +4,7 @@ import Pie from '../../Diagrams/Pie/Pie';
 import './Years.scss';
 import Description from '../Description/Description';
 import Loader from '../../Loader/Loader';
+import baseClient from '../../../services/baseClient';
 
 export default () => {
   const [load, setLoad] = useState(true);
@@ -14,6 +15,7 @@ export default () => {
     const catsArr = [];
     const dogsArr = [];
 
+    // eslint-disable-next-line no-restricted-syntax
     for (const cat in cats) {
       if (cats[cat] !== 0) {
         catsArr.push({
@@ -24,6 +26,7 @@ export default () => {
       }
     }
 
+    // eslint-disable-next-line no-restricted-syntax
     for (const dog in dogs) {
       if (dogs[dog] !== 0) {
         dogsArr.push({
@@ -39,8 +42,8 @@ export default () => {
   };
 
   useEffect(() => {
-    fetch('http://6ac1c6b0eeec.ngrok.io/api/category/')
-      .then(res => res.json())
+    baseClient
+      .getCategories()
       .then(data => {
         parseData(data);
       })
@@ -60,12 +63,14 @@ export default () => {
       ) : (
         <div className="years__animals">
           <div className="years__animal">
+            {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
             <div className="years__animal-title">Котики🐈</div>
             <div className="years__pie-container">
               <Pie data={cats} />
             </div>
           </div>
           <div className="years__animal">
+            {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
             <div className="years__animal-title">Собачки🐕</div>
             <div className="years__pie-container">
               <Pie data={dogs} />
