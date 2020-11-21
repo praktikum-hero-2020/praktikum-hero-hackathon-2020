@@ -9,6 +9,7 @@ import { Provider } from './components/Provider/Provider';
 import Header from './components/Header/Header';
 import RoadMap from './components/RoadMap/RoadMap';
 import Footer from './components/Footer/Footer';
+import TeamInfo from './components/TeamInfo/TeamInfo';
 /* Components */
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             <div className="main__wrapper">
               <Switch>
                 <Route path="/project" component={RoadMap} />
+                <Route path="/about" component={TeamInfo} />
                 <Redirect from="/" to="/main" />
               </Switch>
             </div>
