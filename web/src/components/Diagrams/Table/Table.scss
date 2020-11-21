@@ -13,26 +13,27 @@
 }
 
 .table__tr {
-  background-color: rgba(#e8c1a0, .8);
+  background-color: rgba(#e8c1a0, 0.8);
   cursor: pointer;
 
-  &:nth-child(2n+2) {
-    background-color: rgba(#f47560, .8);;
+  &:nth-child(2n + 2) {
+    background-color: rgba(#f47560, 0.8);
   }
 
-  &:hover{
+  &:hover {
     background-color: rgba(#e8c1a0, 1);
 
-    &:nth-child(2n+2) {
-      background-color: rgba(#f47560, 1);;
+    &:nth-child(2n + 2) {
+      background-color: rgba(#f47560, 1);
     }
   }
 }
 
 .table__body-item {
   text-align: center;
+  color: $black;
 
-  &:hover{
+  &:hover {
     text-decoration: underline;
   }
 }

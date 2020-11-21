@@ -1,8 +1,8 @@
 @keyframes jump {
   0% {
-    transform: rotate(2deg) ;
+    transform: rotate(2deg);
   }
-  50%{
+  50% {
     transform: rotate(0) translateY(-2px);
   }
   100% {
@@ -10,11 +10,11 @@
   }
 }
 
-.pet-card{
-  padding: 80px 100px;
+.pet-card {
+  padding: 0 100px;
 }
 
-.pet-card__container{
+.pet-card__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -23,42 +23,37 @@
   margin: 0 auto;
 }
 
-.pet-card__title{
+.pet-card__title {
   width: 100%;
   margin: 0 0 16px;
   text-align: center;
 }
 
-.pet-card__id{
+.pet-card__id {
   width: 100%;
   margin: 0 0 32px;
   color: #ccc;
   text-align: center;
 }
 
-.pet-card__link{
+.pet-card__link {
   font-size: 70px;
   margin: 0 0 32px;
   align-self: center;
   text-decoration: none;
-  transition: transform .4s;
+  transition: transform 0.4s;
   animation: jump 2s infinite;
 
-  &:hover{
+  &:hover {
     transform: scale(1.1);
   }
 }
 
-.pet-card__data{
-  margin: 0 0 16px;
-  font-size: 26px;
-
-  &:last-of-type{
-    margin-top: 16px;
-  }
+.pet-card__data {
+  margin: 0 0 8px;
+  font-size: 22px;
 }
 
-
-.pet-card__value{
+.pet-card__value {
   font-weight: bold;
 }
