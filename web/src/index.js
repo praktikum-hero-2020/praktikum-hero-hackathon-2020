@@ -11,6 +11,7 @@ import RoadMap from './components/RoadMap/RoadMap';
 import Footer from './components/Footer/Footer';
 import TeamInfo from './components/TeamInfo/TeamInfo';
 import Main from './components/Main/Main';
+import Project from './components/Project/Project';
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
           <main className="main">
             <div className="main__wrapper">
               <Switch>
-                <Route path="/project" component={RoadMap} />
+                <Route path="/project" component={Project} />
+                <Route path="/roadmap" component={RoadMap} />
                 <Route path="/about" component={TeamInfo} />
                 <Route path="/main" component={Main} />
                 <Redirect from="/" to="/project" />
