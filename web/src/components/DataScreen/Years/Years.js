@@ -8,7 +8,7 @@ import Description from '../Description/Description';
 export default () => {
   return (
     <div className="years">
-      <Title className='years__title' text='Мониторинг возраста особей' />
+      <Title className="years__title" text="Мониторинг возраста особей" />
       <div className="years__animals">
         <div className="years__animal">
           <div className="years__animal-title">Котики🐈</div>
@@ -17,9 +17,7 @@ export default () => {
           </div>
         </div>
         <div className="years__animal">
-          <div className="years__animal-title">
-            Собачки🐶
-          </div>
+          <div className="years__animal-title">Собачки🐕</div>
           <div className="years__pie-container">
             <Pie data={mock} />
           </div>
@@ -28,4 +26,4 @@ export default () => {
       <Description text="Показывает возрастной состав обитателей приютов. Помогает равномерно заполнять главную страницу представителями всех категорий." />
     </div>
   );
-}
+};

@@ -22,7 +22,6 @@
 
   &:hover{
     background-color: rgba(#e8c1a0, 1);
-    text-decoration: underline;
 
     &:nth-child(2n+2) {
       background-color: rgba(#f47560, 1);;
@@ -32,4 +31,8 @@
 
 .table__body-item {
   text-align: center;
+
+  &:hover{
+    text-decoration: underline;
+  }
 }
