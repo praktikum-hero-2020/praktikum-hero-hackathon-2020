@@ -13,7 +13,7 @@ export default () => {
   ];
   return (
     <div className="popular">
-      <Title className="popular__title" text="День рождение 🐕 и 🐈" />
+      <Title className="popular__title" text="День рождения 🐕 и 🐈" />
       <div className="popular__content">
         <Table heading={tableHeading} data={tableData} />
       </div>
