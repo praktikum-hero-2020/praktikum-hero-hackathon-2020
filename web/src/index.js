@@ -7,6 +7,7 @@ import './styles/main.scss';
 /* Constants */
 import { Provider } from './components/Provider/Provider';
 /* Components */
+import RoadMap from './components/RoadMap/RoadMap';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <div className="app">
         <Router>
           <Switch>
+            <Route exact path="/" component={RoadMap} />
           </Switch>
         </Router>
       </div>
