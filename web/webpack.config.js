@@ -69,7 +69,7 @@ const getStyleLoaders = (scss = false) => {
 };
 
 module.exports = {
-  entry: './src/index.js',
+  entry: ['@babel/polyfill', './src/index.js'],
   output: {
     path: path.join(__dirname, '/dist'),
     filename: 'static/js/[name].bundle.js',
@@ -93,20 +93,20 @@ module.exports = {
     historyApiFallback: true,
     compress: true,
     hot: isDev,
-    open: true,
+    // open: true,
     overlay: {
       errors: true,
     },
     progress: true,
-    /* proxy: {
-      // прокси для обхода CORS
-      '/api': {
-        // С какого адреса webpack dev server'a будут проксироваться запросы на адрес локального сервера.
-        // Например: http://anyships.site:3000/user запрос на http://anyships.site/user (адрес из target ниже)
-        target: ``, // Целевой адрес локального сервера, куда будут проксироваться запросы с дев сервера
-        changeOrigin: true,
-      },
-    }, */
+    // proxy: {
+    //   // прокси для обхода CORS
+    //   '/api': {
+    //     // С какого адреса webpack dev server'a будут проксироваться запросы на адрес локального сервера.
+    //     // Например: http://anyships.site:3000/user запрос на http://anyships.site/user (адрес из target ниже)
+    //     target: 'http://6ac1c6b0eeec.ngrok.io', // Целевой адрес локального сервера, куда будут проксироваться запросы с дев сервера
+    //     changeOrigin: true,
+    //   },
+    // },
   },
   optimization: optimization(),
   resolve: {

@@ -26,6 +26,7 @@ const App = () => {
                 <Route path="/roadmap" component={RoadMap} />
                 <Route path="/about" component={TeamInfo} />
                 <Route path="/main" component={Main} />
+                <Route path="/pet/:id" component={PetCard} />
                 <Redirect from="/" to="/project" />
               </Switch>
             </div>
