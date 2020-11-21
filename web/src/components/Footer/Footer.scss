@@ -1,17 +1,18 @@
-.footer{
+.footer {
   width: 100%;
   background-color: #000;
 }
 
-.footer__container{
+.footer__container {
   max-width: 1440px;
-  padding: 20px 100px;
+  padding: 0 100px;
   margin: 0 auto;
   display: flex;
   justify-content: flex-end;
+  height: 50px;
 }
 
-.footer__copyright{
+.footer__copyright {
   color: #fff;
   font-size: 16px;
 }
