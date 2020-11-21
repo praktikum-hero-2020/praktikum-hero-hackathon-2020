@@ -1,0 +1,30 @@
+.years{
+  display: flex;
+  flex-direction: column;
+  padding: 80px 100px;
+}
+
+.years__animals{
+  display: flex;
+  justify-content: center;
+}
+
+.years__title{
+  margin: 0 0 40px;
+}
+
+.years__animal{
+  display: flex;
+  flex-direction: column;
+}
+
+.years__animal-title{
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 32px;
+}
+
+.years__pie-container{
+  width: 600px;
+  height: 300px;
+}
