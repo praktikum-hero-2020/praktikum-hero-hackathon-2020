@@ -17,7 +17,17 @@ body {
 
   &__wrapper {
     flex-grow: 1;
-    padding: 0 50px;
+    padding: 40px 50px;
+  }
+
+  &__title {
+    font-size: 48px !important;
+  }
+
+  &__image {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 

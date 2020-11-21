@@ -11,7 +11,7 @@ const titleLinks = [
 ];
 
 const Aside = () => {
-  const [isShow, setIsShow] = useState(true);
+  const [isShow, setIsShow] = useState(false);
   const asideClassName = classNames('aside', { 'aside_is-active': isShow });
   const toggleClassName = classNames('aside__toggle-button', { 'aside__toggle-button_is-active': isShow });
   const toggleAside = () => {
