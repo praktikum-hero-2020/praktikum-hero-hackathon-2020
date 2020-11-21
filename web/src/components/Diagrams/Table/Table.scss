@@ -1,0 +1,35 @@
+.table {
+  border-radius: 16px;
+  overflow: hidden;
+  color: #523f52;
+}
+
+.table__head {
+  background-color: #e8a838;
+}
+
+.table__head-item {
+  padding: 20px 32px;
+}
+
+.table__tr {
+  background-color: rgba(#e8c1a0, .8);
+  cursor: pointer;
+
+  &:nth-child(2n+2) {
+    background-color: rgba(#f47560, .8);;
+  }
+
+  &:hover{
+    background-color: rgba(#e8c1a0, 1);
+    text-decoration: underline;
+
+    &:nth-child(2n+2) {
+      background-color: rgba(#f47560, 1);;
+    }
+  }
+}
+
+.table__body-item {
+  text-align: center;
+}

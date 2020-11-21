@@ -1,0 +1,39 @@
+.description{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.description__button{
+  max-width: 150px;
+  padding: 5px;
+  border: none;
+  margin-bottom: 24px;
+  cursor: pointer;
+  background-color: #272821;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  outline: none;
+  transition: opacity .4s, transform .4s;
+
+  &:hover{
+    opacity: .8;
+  }
+
+  &:active{
+    transform: scale(1.1);
+  }
+}
+
+.description__item{
+  margin: 0 24px;
+  max-height: 0;
+  transition: max-height .4s;
+
+  &_open{
+    max-height: 1000px;
+  }
+}
