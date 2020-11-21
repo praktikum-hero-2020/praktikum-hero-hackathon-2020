@@ -6,6 +6,14 @@ class BaseClient {
     };
   }
 
+  getCategories = () => {
+    return fetch(`${this.baseURL}/category/`, {
+      headers: this.headers,
+    })
+      .then(res => res.json())
+      .catch(err => console.log(err));
+  };
+
   getPetBirthdays = () => {
     return fetch(`${this.baseURL}/hb/`, {
       headers: this.headers,

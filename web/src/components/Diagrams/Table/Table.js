@@ -1,17 +1,8 @@
 import React from 'react';
 import './Table.scss';
 import { NavLink } from 'react-router-dom';
-import baseClient from '../../../services/baseClient';
 
 export default ({ heading, data }) => {
-  // eslint-disable-next-line no-unused-vars
-  const onClick = async id => {
-    if (id) {
-      const result = await baseClient.getPetCard(id);
-      console.log(result);
-    }
-  };
-
   return (
     <table className="table">
       <thead className="table__head">
