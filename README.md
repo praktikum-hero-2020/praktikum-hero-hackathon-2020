@@ -60,3 +60,4 @@ http://praktikum-hero-2020.herokuapp.com/
 2. Для автоматического исправления можно воспользоваться командой:
     ```
         npm run eslintFix
+    ```
