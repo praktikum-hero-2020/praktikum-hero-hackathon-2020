@@ -7,11 +7,10 @@ http://praktikum-hero-2020.herokuapp.com/
 - Разработан дизай в `Figma` [макет](https://www.figma.com/file/cUCEOzHAA0bTzJJ4i4crZg/Herou-Practicum-2020?node-id=0%3A1);
 - Верстка `HTML`, `CSS`, `БЭМ`;
 - Виртуализация при помощи `Docker(DockerFile)`;
-- Тесты написаны на `Jest`;
 - Настроен вебпак:
     - html: `HtmlWebpackPlugin`;
     - обработка css: `css-loader`, `style-loader`, `postcss-loader`, `autoprefixer`, `cssnano`, `mini-css-extract-plugin`;
-    - сборка TS/JS: `babel`, `ts-loader`;
+    - сборка JS: `babel`;
 - Кодстайлинг: `prettier`, `eslint`;
 - Статику раздает `express` на `nodejs`;
 
