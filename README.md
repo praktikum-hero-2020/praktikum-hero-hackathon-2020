@@ -6,7 +6,6 @@ http://praktikum-hero-2020.herokuapp.com/
 ### Что было сделано
 - Разработан дизай в `Figma` [макет](https://www.figma.com/file/cUCEOzHAA0bTzJJ4i4crZg/Herou-Practicum-2020?node-id=0%3A1);
 - Верстка `HTML`, `CSS`, `БЭМ`;
-- В процессе разработки в проект был внедрен `TypeScript`(исключенно использование `any`:))
 - Виртуализация при помощи `Docker(DockerFile)`;
 - Тесты написаны на `Jest`;
 - Настроен вебпак:
