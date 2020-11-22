@@ -40,7 +40,7 @@ export default ({
           <PetCardData heading="Пол" value={gender} />
           <PetCardData heading="Пожертвовано" value={donats} />
           <PetCardData heading="Вероятность найти хозяина" value={percentage} />
-          <PetCardData heading="Дней в приюту" value="В разработке" />
+          <PetCardData heading="Дней в приюте" value="В разработке" />
           <PetCardData heading="Потрачено на рекламу" value="В разработке" />
         </div>
       )}
