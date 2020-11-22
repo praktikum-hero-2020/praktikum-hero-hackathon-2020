@@ -22,7 +22,7 @@ const Aside = () => {
     <>
       <aside className={asideClassName}>
         <div className="aside__links">
-          <h2 className="aside__links-title">Доступные данные для анализа</h2>
+          <h2 className="aside__links-title">Данные для анализа</h2>
           {titleLinks.map(({ title, path }) => (
             <AsideLink key={title} path={path} title={title} clickHandler={toggleAside} />
           ))}
