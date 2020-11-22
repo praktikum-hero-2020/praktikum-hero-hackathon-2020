@@ -10,7 +10,7 @@
 }
 
 .years__title{
-  margin: 0 0 40px;
+  margin: 0 auto 40px;
 }
 
 .years__animal{
@@ -27,4 +27,5 @@
 .years__pie-container{
   width: 600px;
   height: 300px;
+  transform: translateX(-70px);
 }

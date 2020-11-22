@@ -18,9 +18,37 @@ export default () => {
     // eslint-disable-next-line no-restricted-syntax
     for (const cat in cats) {
       if (cats[cat] !== 0) {
+        let parse = '';
+
+        switch (cat) {
+          case 'kitten': {
+            parse = 'котята';
+            break;
+          }
+          case 'young': {
+            parse = 'молодые';
+            break;
+          }
+          case 'adult': {
+            parse = 'взрослые';
+            break;
+          }
+          case 'elderly': {
+            parse = 'пожилые';
+            break;
+          }
+          case 'old': {
+            parse = 'старые';
+            break;
+          }
+          default: {
+            break;
+          }
+        }
+
         catsArr.push({
-          id: cat,
-          label: cat,
+          id: parse,
+          label: parse,
           value: cats[cat],
         });
       }
@@ -29,9 +57,28 @@ export default () => {
     // eslint-disable-next-line no-restricted-syntax
     for (const dog in dogs) {
       if (dogs[dog] !== 0) {
+        let parse = '';
+        switch (dog) {
+          case 'puppy': {
+            parse = 'щинки';
+            break;
+          }
+          case 'young': {
+            parse = 'молодые';
+            break;
+          }
+          case 'adult': {
+            parse = 'взрослые';
+            break;
+          }
+          default: {
+            break;
+          }
+        }
+
         dogsArr.push({
-          id: dog,
-          label: dog,
+          id: parse,
+          label: parse,
           value: dogs[dog],
         });
       }
