@@ -6,6 +6,7 @@ const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plug
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -93,7 +94,7 @@ module.exports = {
     historyApiFallback: true,
     compress: true,
     hot: isDev,
-    // open: true,
+    open: true,
     overlay: {
       errors: true,
     },
@@ -179,6 +180,24 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new ProgressBarPlugin(),
+    new FaviconsWebpackPlugin({
+      logo: './src/static/favicon.png',
+      cache: true,
+      prefix: './static/favicons',
+      inject: true,
+      favicons: {
+        icons: {
+          android: false, // Create Android homescreen icon. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }` or an array of sources
+          appleIcon: false, // Create Apple touch icons. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }` or an array of sources
+          appleStartup: false, // Create Apple startup images. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }` or an array of sources
+          coast: false, // Create Opera Coast icon. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }` or an array of sources
+          favicons: true, // Create regular favicons. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }` or an array of sources
+          firefox: false, // Create Firefox OS icons. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }` or an array of sources
+          windows: false, // Create Windows 8 tile icons. `boolean` or `{ offset, background, mask, overlayGlow, overlayShadow }` or an array of sources
+          yandex: false,
+        },
+      },
+    }),
     ...(isProd
       ? [
           new MiniCssExtractPlugin({

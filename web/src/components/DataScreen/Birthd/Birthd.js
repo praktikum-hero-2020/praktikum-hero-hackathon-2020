@@ -6,7 +6,7 @@ import baseClient from '../../../services/baseClient';
 import Loader from '../../Loader/Loader';
 
 export default () => {
-  const tableHeading = ['Сегодня', 'В билжайшие 7 дней'];
+  const tableHeading = ['Сегодня', 'В ближайшие 7 дней'];
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
 
