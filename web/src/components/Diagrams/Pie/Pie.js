@@ -24,7 +24,7 @@ export default ({ data }) => (
         color: 'rgba(255, 255, 255, 0.3)',
         size: 4,
         padding: 1,
-        stagger: true
+        stagger: true,
       },
       {
         id: 'lines',
@@ -33,33 +33,33 @@ export default ({ data }) => (
         color: 'rgba(255, 255, 255, 0.3)',
         rotation: -45,
         lineWidth: 6,
-        spacing: 10
-      }
+        spacing: 10,
+      },
     ]}
     legends={[
       {
         anchor: 'right',
         direction: 'column',
         justify: false,
-        translateX: 0,
-        translateY: 56,
-        itemsSpacing: 0,
+        translateX: 80,
+        translateY: 0,
+        itemsSpacing: 16,
         itemWidth: 100,
         itemHeight: 18,
         itemTextColor: '#999',
         itemDirection: 'left-to-right',
         itemOpacity: 1,
-        symbolSize: 18,
+        symbolSize: 24,
         symbolShape: 'circle',
         effects: [
           {
             on: 'hover',
             style: {
-              itemTextColor: '#000'
-            }
-          }
-        ]
-      }
+              itemTextColor: '#000',
+            },
+          },
+        ],
+      },
     ]}
   />
-)
+);

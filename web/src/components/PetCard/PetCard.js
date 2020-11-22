@@ -44,7 +44,6 @@ export default ({
           <PetCardData heading="Потрачено на рекламу" value="В разработке" />
         </div>
       )}
-      <Description text="Сводная информация обо всех питомцах из базы сайта." />.
     </div>
   );
 };
